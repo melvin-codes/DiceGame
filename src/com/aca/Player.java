@@ -1,8 +1,10 @@
 package com.aca;
 
 public class Player {
-    public String name;
-    public int [] dieSet;
+    private String name;
+    private int [] dieSet;
+    private int total;
+    private int winner;
 
     public String getName() {
         return name;
@@ -11,10 +13,22 @@ public class Player {
         this.name = name;
     }
     public void setDieSet(int[] ints) {
-        this.dieSet = RollDie.DiceSet();
+        this.dieSet = RollDie.DiceSetCreator();
     }
     public int [] getDieSet() {
         return dieSet;
+    }
+    public int getTotal() {
+        return total;
+    }
+    public void setTotal(int total) {
+        this.total = total;
+    }
+    public int getWinner() {
+        return winner;
+    }
+    public void setWinner(int winner) {
+        this.winner = winner;
     }
     @Override
     public String toString() {

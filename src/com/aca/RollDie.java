@@ -7,7 +7,7 @@ public class RollDie {
         Random random = new Random();
         return (int)(Math.random() * 6 + 1);
     }
-    public static int [] DiceSet() {
+    public static int [] DiceSetCreator() {
         int[] DiceSet = new int[3];
         for(int i = 0; i < 3; i++) {
             DiceSet[i] = rollDie();
