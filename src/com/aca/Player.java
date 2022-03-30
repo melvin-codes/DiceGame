@@ -16,7 +16,6 @@ public class Player {
     public int [] getDieSet() {
         return dieSet;
     }
-
     @Override
     public String toString() {
         return "[" + dieSet[0] + ", " + dieSet[1] + ", " + dieSet[2] + "]";

@@ -39,8 +39,6 @@ public class DiceGame {
                 roundChecker(P1total, P2total, P1, P2);
                 break;
         }
-
-
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -55,7 +53,7 @@ public class DiceGame {
 
         System.out.println("This game consists of 5 rounds\n");
         int rounds = 1;
-        while(rounds != 6) {
+        while(rounds != 30) {
             //Sets the 3 rolled die and then adds them
             P1.setDieSet(RollDie.DiceSet());
             P2.setDieSet(RollDie.DiceSet());

@@ -21,10 +21,4 @@ public class RollDie {
         }
         return total;
     }
-//
-//    @Override
-//    public static String toString() {
-//        return
-//    }
-
 }
